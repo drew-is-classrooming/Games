@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Tetris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TETRIS</h1>
+    <div class="game-container">
+        <div class="board-container">
+            <canvas id="game-board" width="300" height="600"></canvas>
+            <div id="pause-overlay" class="hidden">PAUSED</div>
+        </div>
+        <div class="game-info">
+            <div class="info-box">
+                <h2>SCORE</h2>
+                <p id="score">0</p>
+            </div>
+            <div class="info-box">
+                <h2>LEVEL</h2>
+                <p id="level">0</p>
+            </div>
+            <div class="info-box">
+                <h2>HIGH SCORE</h2>
+                <p id="high-score">0</p>
+            </div>
+            <div class="info-box">
+                <h2>NEXT</h2>
+                <canvas id="next-piece" width="120" height="120"></canvas>
+            </div>
+            <button id="start-button">START GAME</button>
+            <button id="restart-button" class="hidden">RESTART GAME</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
